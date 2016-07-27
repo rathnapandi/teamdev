@@ -8,6 +8,23 @@
 	</parent>
 	<artifactId>gateway</artifactId>
 
+	<dependencies>
+		<dependency>
+
+
+			<groupId>com.axway.poc</groupId>
+			<artifactId>common</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+
+
+			<groupId>com.axway.poc</groupId>
+			<artifactId>apiproject-1</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+
 	<build>
 		<plugins>
 			<plugin>
