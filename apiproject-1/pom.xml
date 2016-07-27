@@ -6,4 +6,16 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>apiproject-1</artifactId>
+  <build>
+		<resources>
+			<resource>
+				<directory>.</directory>
+				<excludes>
+					<exclude>.settings/**</exclude>
+					<exclude>meta-inf/**</exclude>
+				</excludes>
+			</resource>
+		</resources>
+	</build>
+
 </project>
