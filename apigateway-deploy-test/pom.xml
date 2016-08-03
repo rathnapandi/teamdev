@@ -55,14 +55,14 @@
 	<repositories>
 		<repository>
 			<id>central</id>
-			<url>http://http://10.128.58.113:8081/artifactory/libs-release</url>
+			<url>http://10.128.58.113:8081/artifactory/libs-release</url>
 			<snapshots>
 				<enabled>false</enabled>
 			</snapshots>
 		</repository>
 		<repository>
 			<id>snapshots</id>
-			<url>http://http://10.128.58.113:8081/artifactory/libs-snapshot</url>
+			<url>http://10.128.58.113:8081/artifactory/libs-snapshot</url>
 			<releases>
 				<enabled>false</enabled>
 			</releases>
