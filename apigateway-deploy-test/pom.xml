@@ -1,25 +1,28 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.axway</groupId>
-  <artifactId>apigateway-deploy-test</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <dependencies>
-  
-  <dependency>
-    <groupId>com.axway</groupId>
-    <artifactId>api-int</artifactId>
-    <version>0.0.1-20160802.235837-3</version>
-    <type>pol</type>
-</dependency>
-<dependency>
-    <groupId>com.axway</groupId>
-    <artifactId>api-int</artifactId>
-    <version>0.0.1-20160803.000007-4</version>
-    <classifier>dev</classifier>
-    <type>env</type>
-</dependency>
-  </dependencies>
-  <build>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.axway</groupId>
+	<artifactId>apigateway-deploy-test</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>com.axway</groupId>
+			<artifactId>api-int</artifactId>
+			<version>0.0.1-20160802.235837-3</version>
+			<type>pol</type>
+		</dependency>
+		<dependency>
+			<groupId>com.axway</groupId>
+			<artifactId>api-int</artifactId>
+			<version>0.0.1-20160803.000007-4</version>
+			<classifier>dev</classifier>
+			<type>env</type>
+		</dependency>
+	</dependencies>
+
+	<build>
 		<plugins>
 			<plugin>
 				<groupId>com.axway</groupId>
@@ -48,4 +51,25 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<repositories>
+		<repository>
+			<id>central</id>
+			<url>http://http://10.128.58.113:8081/artifactory/libs-release</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>snapshots</id>
+			<url>http://http://10.128.58.113:8081/artifactory/libs-snapshot</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+		</repository>
+	</repositories>
+	<!-- <pluginRepositories> <pluginRepository> <id>central</id> <url>http://[host]:[port]/artifactory/plugins-release</url> 
+		<snapshots> <enabled>false</enabled> </snapshots> </pluginRepository> <pluginRepository> 
+		<id>snapshots</id> <url>http://[host]:[port]/artifactory/plugins-snapshot</url> 
+		<releases> <enabled>false</enabled> </releases> </pluginRepository> -->
 </project>
