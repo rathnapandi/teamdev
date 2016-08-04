@@ -7,19 +7,19 @@
 
 	<dependencies>
 
+	<dependency>
+    <groupId>com.axway</groupId>
+    <artifactId>api-int</artifactId>
+    <version>0.0.1-20160804.053727-5</version>
+    <type>pol</type>
+</dependency>
 		<dependency>
-			<groupId>com.axway</groupId>
-			<artifactId>api-int</artifactId>
-			<version>0.0.1-20160802.235837-3</version>
-			<type>pol</type>
-		</dependency>
-		<dependency>
-			<groupId>com.axway</groupId>
-			<artifactId>api-int</artifactId>
-			<version>0.0.1-20160803.000007-4</version>
-			<classifier>dev</classifier>
-			<type>env</type>
-		</dependency>
+    <groupId>com.axway</groupId>
+    <artifactId>api-int</artifactId>
+    <version>0.0.1-20160804.053727-5</version>
+    <classifier>dev</classifier>
+    <type>env</type>
+</dependency>
 	</dependencies>
 
 	<build>
