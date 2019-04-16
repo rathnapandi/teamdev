@@ -55,10 +55,10 @@
 				<artifactId>policy-archive</artifactId>
 				<executions>
 					<execution>
-						<id>fed</id>
+						<id>pol</id>
 						<phase>package</phase>
 						<goals>
-							<goal>fed</goal>
+							<goal>pol</goal>
 						</goals>
 					</execution>
 				</executions>
